@@ -1902,3 +1902,10 @@
 [2022-03-14 03:24:04,461] {logging_mixin.py:104} INFO - [2022-03-14 03:24:04,461] {example_kubernetes_executor_config.py:176} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
 [2022-03-14 03:24:04,461] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/sandbox/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
 [2022-03-14 03:24:04,465] {scheduler_job.py:190} INFO - Processing /home/airflow/sandbox/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.011 seconds
+[2022-03-14 03:24:37,638] {scheduler_job.py:182} INFO - Started process (PID=18622) to work on /home/airflow/sandbox/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-03-14 03:24:37,639] {scheduler_job.py:633} INFO - Processing file /home/airflow/sandbox/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2022-03-14 03:24:37,639] {logging_mixin.py:104} INFO - [2022-03-14 03:24:37,639] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/sandbox/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-03-14 03:24:37,644] {logging_mixin.py:104} INFO - [2022-03-14 03:24:37,644] {example_kubernetes_executor_config.py:175} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2022-03-14 03:24:37,644] {logging_mixin.py:104} INFO - [2022-03-14 03:24:37,644] {example_kubernetes_executor_config.py:176} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2022-03-14 03:24:37,644] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/sandbox/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-03-14 03:24:37,649] {scheduler_job.py:190} INFO - Processing /home/airflow/sandbox/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.012 seconds
