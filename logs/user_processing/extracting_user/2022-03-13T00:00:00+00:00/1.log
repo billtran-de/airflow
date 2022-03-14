@@ -1,0 +1,25 @@
+[2022-03-14 02:49:50,697] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2022-03-13T00:00:00+00:00 [queued]>
+[2022-03-14 02:49:50,701] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2022-03-13T00:00:00+00:00 [queued]>
+[2022-03-14 02:49:50,701] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 02:49:50,701] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-03-14 02:49:50,701] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 02:49:50,706] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user> on 2022-03-13T00:00:00+00:00
+[2022-03-14 02:49:50,707] {standard_task_runner.py:52} INFO - Started process 14102 to run task
+[2022-03-14 02:49:50,713] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing', 'extracting_user', '2022-03-13T00:00:00+00:00', '--job-id', '23', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmp8_m7u8qw', '--error-file', '/tmp/tmprvl3ahxe']
+[2022-03-14 02:49:50,714] {standard_task_runner.py:77} INFO - Job 23: Subtask extracting_user
+[2022-03-14 02:49:50,740] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing.extracting_user 2022-03-13T00:00:00+00:00 [running]> on host airflowvm
+[2022-03-14 02:49:50,767] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=extracting_user
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-13T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-13T00:00:00+00:00
+[2022-03-14 02:49:50,767] {http.py:102} INFO - Calling HTTP method
+[2022-03-14 02:49:50,769] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2022-03-14 02:49:50,770] {http.py:129} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2022-03-14 02:49:50,957] {http.py:106} INFO - {"results":[{"gender":"female","name":{"title":"Ms","first":"Dolores","last":"Arias"},"location":{"street":{"number":4766,"name":"Calle de Ferraz"},"city":"Vigo","state":"Canarias","country":"Spain","postcode":57103,"coordinates":{"latitude":"-19.0792","longitude":"71.5113"},"timezone":{"offset":"+2:00","description":"Kaliningrad, South Africa"}},"email":"dolores.arias@example.com","login":{"uuid":"40d877f3-8b34-457a-9e00-fcf85b7d1eef","username":"beautifulzebra828","password":"1122","salt":"RpsxBOe4","md5":"ba63152068528d4e56ffa692d3f5fd94","sha1":"be2ee4687318359f1d66589aeeb400a7762cd409","sha256":"ce8aa7a42a546232015d268166864931b6743283651f59590819bfa156c887ba"},"dob":{"date":"1996-04-10T20:26:53.440Z","age":26},"registered":{"date":"2011-10-16T14:23:27.855Z","age":11},"phone":"974-818-990","cell":"663-484-890","id":{"name":"DNI","value":"14167084-J"},"picture":{"large":"https://randomuser.me/api/portraits/women/33.jpg","medium":"https://randomuser.me/api/portraits/med/women/33.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/33.jpg"},"nat":"ES"}],"info":{"seed":"2490aa13cb50c303","results":1,"page":1,"version":"1.3"}}
+[2022-03-14 02:49:50,965] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=extracting_user, execution_date=20220313T000000, start_date=20220314T024950, end_date=20220314T024950
+[2022-03-14 02:49:50,977] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-03-14 02:49:51,016] {local_task_job.py:151} INFO - Task exited with return code 0
